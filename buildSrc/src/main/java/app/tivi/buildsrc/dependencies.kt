@@ -80,7 +80,7 @@ object Libs {
     }
 
     object Coroutines {
-        private const val version = "1.3.5"
+        private const val version = "1.3.5-1.4-M1"
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
         const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$version"
@@ -196,7 +196,7 @@ object Libs {
     }
 
     object Epoxy {
-        private const val version = "3.9.0"
+        private const val version = "3.11.0"
         const val epoxy = "com.airbnb.android:epoxy:$version"
         const val paging = "com.airbnb.android:epoxy-paging:$version"
         const val dataBinding = "com.airbnb.android:epoxy-databinding:$version"
