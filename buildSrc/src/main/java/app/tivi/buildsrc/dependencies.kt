@@ -17,7 +17,7 @@
 package app.tivi.buildsrc
 
 object Versions {
-    const val ktlint = "0.36.0"
+    const val ktlint = "0.37.0"
 }
 
 object Libs {
@@ -153,7 +153,7 @@ object Libs {
         }
 
         object UI {
-            const val snapshot = "6543212"
+            const val snapshot = "6558100"
             const val version = "0.1.0-SNAPSHOT"
 
             const val core = "androidx.ui:ui-core:$version"

@@ -111,8 +111,8 @@ import app.tivi.ui.animations.lerp
 import app.tivi.util.TiviDateFormatter
 import dev.chrisbanes.accompanist.coil.CoilImageWithCrossfade
 import dev.chrisbanes.accompanist.mdctheme.MaterialThemeFromMdcTheme
-import kotlin.math.hypot
 import org.threeten.bp.OffsetDateTime
+import kotlin.math.hypot
 
 /**
  * This is a bit of hack. I can't make `ui-episodedetails` depend on any of the compose libraries,
@@ -295,8 +295,10 @@ private fun Backdrop(
                             @Suppress("DEPRECATION")
                             val locale = ConfigurationAmbient.current.locale
                             Text(
-                                text = stringResource(R.string.season_episode_number,
-                                    seasonNumber, epNumber).toUpperCase(locale),
+                                text = stringResource(
+                                    R.string.season_episode_number,
+                                    seasonNumber, epNumber
+                                ).toUpperCase(locale),
                                 style = MaterialTheme.typography.overline
                                     .copy(color = contentColor())
                             )

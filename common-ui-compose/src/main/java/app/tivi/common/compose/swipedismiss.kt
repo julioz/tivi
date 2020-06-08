@@ -66,10 +66,12 @@ fun SwipeToDismiss(
                 constraints.maxWidth.value.toFloat()
             )
         } else if (START in swipeDirections && layoutDirection == LayoutDirection.Ltr ||
-            END in swipeDirections && layoutDirection == LayoutDirection.Rtl) {
+            END in swipeDirections && layoutDirection == LayoutDirection.Rtl
+        ) {
             position.setBounds(-constraints.maxWidth.value.toFloat(), 0f)
         } else if (END in swipeDirections && layoutDirection == LayoutDirection.Ltr ||
-            START in swipeDirections && layoutDirection == LayoutDirection.Rtl) {
+            START in swipeDirections && layoutDirection == LayoutDirection.Rtl
+        ) {
             position.setBounds(0f, constraints.maxWidth.value.toFloat())
         }
 
